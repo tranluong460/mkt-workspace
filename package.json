@@ -1,0 +1,36 @@
+{
+    "name": "mkt-workspace",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "format": "yarn workspaces run format",
+        "lint": "yarn workspaces run lint",
+        "flint": "yarn workspaces run flint",
+        "typecheck:node": "yarn workspaces run typecheck:node",
+        "typecheck:web": "yarn workspaces run typecheck:web",
+        "typecheck": "yarn workspaces run typecheck",
+        "start": "yarn workspaces run start",
+        "dev": "yarn workspaces run dev",
+        "build-core": "yarn workspaces run build-core",
+        "build": "yarn workspaces run build",
+        "build:win": "yarn workspaces run build:win",
+        "build:win:zip": "yarn workspaces run build:win:zip",
+        "build:mac": "yarn workspaces run build:mac",
+        "build:mac:universal": "yarn workspaces run build:mac:universal",
+        "build:mac:arm64": "yarn workspaces run build:mac:arm64",
+        "build:mac:x64": "yarn workspaces run build:mac:x64",
+        "build:linux": "yarn workspaces run build:linux",
+        "build:unpack": "yarn workspaces run build:unpack",
+        "build:unpack:mac": "yarn workspaces run build:unpack:mac",
+        "beforbuild": "yarn workspaces run beforbuild",
+        "afterbuild": "yarn workspaces run afterbuild",
+        "postinstall": "yarn workspaces run postinstall",
+        "vitech": "yarn workspaces run vitech",
+        "submodule": "node scripts/submodule.js",
+        "prepare": "yarn workspaces run prepare",
+        "bump": "yarn workspaces run bump",
+        "auto-build": "yarn workspaces run auto-build"
+    }
+}
